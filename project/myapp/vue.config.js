@@ -3,7 +3,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/ajax': {
-        target: 'https://m.maoyan.com',
+        target: 'https://m.maizuo.com',
         ws: true,
         changeOrigin: true
       }

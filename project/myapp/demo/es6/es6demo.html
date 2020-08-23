@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+
+
+<script type="text/javascript">
+window.onload=function(){
+	//ES5的语法
+	var testArr=[1,2,3,4];
+	
+	testArr=testArr.map(function(x){
+		return x+1;
+	});
+	console.log(testArr);
+	
+	//ES6的箭头函数
+	var testArr2=[1,2,3,4];
+	console.log(testArr2);
+	var newArr=testArr2.map((params)=>(params+1));
+	console.log(newArr);
+	
+	
+	//es6的模板字符串
+	
+	
+	const  template1="kefan";
+	
+	console.log(`hello${template1}`);
+	
+	
+	
+	function testObject(name,password){
+		this.name=name;
+		this.password=password;
+	}
+	
+	var testObj=new testObject("kefan","password");
+	console.log(testObj);
+	
+	
+	
+	//ES5对象字面量
+	var people={
+			name:"kefan",
+			password:123456,
+			getName:function(){
+				console.log(name);
+			}
+	}
+	console.log(people);
+	
+	
+	people={
+			name:"kefan",
+			password:123456,
+			getName(){
+				console.log(name);
+			}
+	}
+	
+	console.log(people);
+}
+
+</script>
+
+
+
+<body>
+
+</body>
+</html>

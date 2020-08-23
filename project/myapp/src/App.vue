@@ -1,6 +1,6 @@
 <template>
 	<div class="box">
-	<div>hello vue!</div>
+	<!-- <div>hello vue!</div>
 	<input type="text" name="myText"   ref="myText"/>
 	<button @click="handlerClick">添加</button>
 	
@@ -19,7 +19,7 @@
 	
 	
 	
-	我是路由容器
+	我是路由容器 -->
 	<router-view></router-view>
 
 
@@ -46,13 +46,13 @@
 
 <script>
 
-import sidebar from "./components/Sidebar.vue"
-import navibar from "./components/Navibar"
-import Vue from "vue"
+//import sidebar from "./components/Sidebar.vue"
+//import navibar from "./components/Navibar"
+//import Vue from "vue"
 import axios from "axios"
 import tabbar from "@/components/Tabbar"
 
-Vue.component("sidebar",sidebar);
+//Vue.component("sidebar",sidebar);
 //Vue.component("navibar",navibar);
 
 
@@ -69,15 +69,21 @@ export default{
 		}
 	},
 	components:{
-		navibar:navibar,
+		//navibar:navibar,
 		tabbar:tabbar
 	},
 	mounted(){
-		axios.get("/ajax/movieOnInfoList?token=&optimus_uuid=DD85C1F0DFA511EA84CCC1360D39E0A43104C6445816465889497520EABBB9A2&optimus_risk_level=71&optimus_code=10").then(res=>{
-			console.log(res.data);
-		});
+		/* axios.get("/ajax/movieOnInfoList?token=&optimus_uuid=DD85C1F0DFA511EA84CCC1360D39E0A43104C6445816465889497520EABBB9A2&optimus_risk_level=71&optimus_code=10").then(res=>{
+			console.log(res.data.movieList);
+		}); */
 	}
 }
 </script>
+
+<style>
+.myActiveClass{
+	color: red;
+}
+</style>
 
 
