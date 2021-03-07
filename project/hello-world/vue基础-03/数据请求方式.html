@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src=" https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>
+</head>
+<body>
+
+
+    <div id="app">
+
+
+        <label>使用fetch加载数据</label>
+        <button @click="getFilms()">使用fetch加载数据</button>
+        <hr>
+        <label>使用axios加载数据</label>
+        <button @click="getFilmsByAxios()">使用axios加载数据</button>
+    <ul v-for="tempFilm in fileArray">
+        <li>{{tempFilm.name}}</li>
+
+    </ul>
+</div>
+
+    
+</body>
+
+
+<script>
+
+
+
+
+
+
+var vm =new Vue({
+    el:"#app",
+    data:{
+        fileArray:[]
+    },
+    methods:{
+        getFilms(){
+            //fetch("./json/testJsonData.json").then(response=>response.json()).then(result=> this.fileArray=result.data.films);
+       
+           fetch("./json/testJsonData.json").then(function(response){
+            return response.json()
+           }).then(function(result){
+            vm.fileArray=result.data.films
+           });
+        },
+        getFilmsByAxios(){
+            axios.get("./json/testJsonData.json").then((result)=>{
+                vm.fileArray=result.data.data.films;
+            }).catch(err=>{
+                console.log(err);
+            });
+        }
+
+    }
+});
+
+        
+</script>
+
+
+</html>

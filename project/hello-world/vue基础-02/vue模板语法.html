@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<body>
+
+    <div id="app">
+
+        <label>{{message}}</label>
+        <div>{{myHtml}}</div>
+        <div v-html="myHtml"></div>
+
+
+
+        <div id="myClass">测试v-bind指令</div>
+        <div v-bind:id="myClass">测试v-bind指令</div>
+        <div :id="myClass">测试v-bind指令缩写</div>
+
+        <div v-show="isShow">动态显示和隐藏</div>
+
+
+        <div v-if="isCreated">动态创建和删除</div>
+    </div>
+    
+</body>
+
+<script>
+
+
+var vm = new Vue({
+
+    el:"#app",
+    data(){
+        return {
+            message:"我是湖北人",
+            myHtml:"<a href='javascript:void(0)'>点击我跳转<a>",
+            myClass:"testClass",
+            myIfData:20,
+            isShow:true,
+            isCreated:true
+
+        }
+    }
+
+});
+
+
+</script>
+
+
+</html>

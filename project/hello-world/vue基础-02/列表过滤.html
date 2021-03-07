@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+
+</style>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<body>
+
+    <div id="app">
+
+       请输入用户名称: <input name="userName" value="" v-model="searchInputName" @input="handleInput" />
+
+
+       <ul v-for="tempItem in userNameAray">
+            <li>{{tempItem}}</li>
+       </ul>
+
+     
+    </div>
+    
+</body>
+
+<script>
+
+
+var vm=new Vue({
+
+    el:"#app",
+    data:{
+        searchInputName:"",
+        userNameAray:['aaa','bbb','ccc','ddd','aabced'],
+        userNameArayOrig:['aaa','bbb','ccc','ddd','aabced']  //数据拷贝
+    },
+    methods:{
+        handleInput(){
+            if(this.userNameAray==null ){
+                return ;
+            }
+            this.userNameAray= this.userNameArayOrig.filter((tempName)=>{   
+                console.log("tempName=====>"+tempName);
+                console.log("searchInputName=====>"+this.searchInputName);
+              return  tempName.indexOf(this.searchInputName)>-1;
+            });
+
+        }
+    }
+
+
+});
+
+</script>
+
+
+</html>

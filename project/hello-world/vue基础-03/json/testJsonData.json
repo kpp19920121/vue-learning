@@ -1,0 +1,519 @@
+{
+    "status": 0, 
+    "data": {
+        "films": [
+            {
+                "filmId": 5335, 
+                "name": "你好，李焕英", 
+                "poster": "https://pic.maizuo.com/usr/movie/3f97c0ef0eca443b9307fad1c05c188e.jpg", 
+                "actors": [
+                    {
+                        "name": "贾玲", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/577c7d72a1908638a805b4be88aeb791.jpg"
+                    }, 
+                    {
+                        "name": "贾玲", 
+                        "role": "贾晓玲", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/577c7d72a1908638a805b4be88aeb791.jpg"
+                    }, 
+                    {
+                        "name": "张小斐", 
+                        "role": "李焕英", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/8e7578d4cae429675760aa74f5cc3da9.jpg"
+                    }, 
+                    {
+                        "name": "沈腾", 
+                        "role": "沈光林", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/98c43da4b43bcf161d5b9c905253c016.jpg"
+                    }, 
+                    {
+                        "name": "陈赫", 
+                        "role": "演员", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/4601fb466d358df29886c566a76808f8.jpg"
+                    }
+                ], 
+                "director": "贾玲", 
+                "category": "喜剧|剧情", 
+                "synopsis": "2001年的某一天，刚刚考上大学的贾晓玲（贾玲 饰）经历了人生中的一次大起大落。一心想要成为母亲骄傲的她却因母亲突遭严重意外，而悲痛万分。在贾晓玲情绪崩溃的状态下，竟意外的回到了 1981 年，并与年轻的母亲李焕英（张小斐 饰）相遇，二人形影不离，宛如闺蜜。与此同时，也结识了一群天真善良的好朋友。晓玲以为来到了这片“广阔天地”，她可以凭借自己超前的思维，让母亲“大有作为”，但结果却让晓玲感到意外......", 
+                "filmType": {
+                    "name": "2D", 
+                    "value": 1
+                }, 
+                "nation": "中国大陆", 
+                "language": "", 
+                "videoId": "", 
+                "premiereAt": 1613088000, 
+                "timeType": 3, 
+                "runtime": 128, 
+                "grade": "7.4", 
+                "item": {
+                    "name": "2D", 
+                    "type": 1
+                }, 
+                "isPresale": true, 
+                "isSale": false
+            }, 
+            {
+                "filmId": 5366, 
+                "name": "寻龙传说", 
+                "poster": "https://pic.maizuo.com/usr/movie/1dccdda4058760c11ec4566881b687da.jpg", 
+                "actors": [
+                    {
+                        "name": "唐·霍尔", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/8b89ad34d2361b92eabf7f4ec41fe76c.jpg"
+                    }, 
+                    {
+                        "name": "卡洛斯·洛佩斯·埃斯特拉达", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/f10c122a957aac0e546f44449af60efd.jpg"
+                    }, 
+                    {
+                        "name": "保罗·布里格斯", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/077d77789f979782f26de4f6618a2dba.jpg"
+                    }, 
+                    {
+                        "name": "约翰·瑞帕", 
+                        "role": "联合执导", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/0df4045ca3573e50f8f376477b09d89d.jpg"
+                    }, 
+                    {
+                        "name": "凯文·麦克纳利", 
+                        "role": "Joshamme Gibbs", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/bc72b7dd648d94754866b9e5086ac287.jpg"
+                    }
+                ], 
+                "director": "唐·霍尔|卡洛斯·洛佩斯·埃斯特拉达|保罗·布里格斯|约翰·瑞帕", 
+                "category": "动画", 
+                "synopsis": "当邪恶势力威胁王国的安全，勇士拉雅将和伙伴一起寻找世界上的最后一条龙，为王国带回光明。", 
+                "filmType": {
+                    "name": "3D", 
+                    "value": 2
+                }, 
+                "nation": "美国", 
+                "language": "", 
+                "videoId": "", 
+                "premiereAt": 1614902400, 
+                "timeType": 3, 
+                "runtime": 108, 
+                "grade": "7.6", 
+                "item": {
+                    "name": "3D", 
+                    "type": 2
+                }, 
+                "isPresale": true, 
+                "isSale": false
+            }, 
+            {
+                "filmId": 5337, 
+                "name": "人潮汹涌", 
+                "poster": "https://pic.maizuo.com/usr/movie/1e1c5b8027e2f1165691f2042fd18313.jpg", 
+                "actors": [
+                    {
+                        "name": "万茜", 
+                        "role": "李想", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/83313c5fafc14a45b00f00bf662100a4.jpg"
+                    }, 
+                    {
+                        "name": "程怡", 
+                        "role": "九蓉", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/12425807e1c225d531e3cdffb0743dd5.jpg"
+                    }, 
+                    {
+                        "name": "饶晓志", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/3ad929d3970e9f5a4b1168c01fd625b6.jpg"
+                    }, 
+                    {
+                        "name": "刘德华", 
+                        "role": "周全", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/ca47cd961fe0be0c91149f6bcca2f13d.jpg"
+                    }, 
+                    {
+                        "name": "肖央", 
+                        "role": "陈小萌", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/3ce5eeb8f056391d655c2d0a6ec35675.jpg"
+                    }
+                ], 
+                "director": "饶晓志", 
+                "category": "剧情|喜剧|犯罪", 
+                "synopsis": "2021年，你做好准备换个活法，牛转乾坤了吗？ 顶级杀手周全（刘德华 饰）和落寞群演陈小萌（肖央 饰）在一次意外中交换了身份。杀手在跌入谷底的过程中，重新审视了爱情和生活；群演在冒充杀手的过程中，彻底重塑了人生。两个人一起历经的荒诞，有啼笑皆非，更有热血沸腾。", 
+                "filmType": {
+                    "name": "2D", 
+                    "value": 1
+                }, 
+                "nation": "中国大陆", 
+                "language": "", 
+                "videoId": "", 
+                "premiereAt": 1613088000, 
+                "timeType": 3, 
+                "runtime": 119, 
+                "grade": "7.4", 
+                "item": {
+                    "name": "2D", 
+                    "type": 1
+                }, 
+                "isPresale": true, 
+                "isSale": false
+            }, 
+            {
+                "filmId": 4835, 
+                "name": "唐人街探案3", 
+                "poster": "https://pic.maizuo.com/usr/movie/0f35af2416df5a58222f902362bc927e.jpg", 
+                "actors": [
+                    {
+                        "name": "陈思诚", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/3abadb9868592f959bd4c8160b8a1653.jpg"
+                    }, 
+                    {
+                        "name": "刘昊然", 
+                        "role": "秦风", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/1f376fc5a437e675ab0141c56bc4dc26.jpg"
+                    }, 
+                    {
+                        "name": "王宝强", 
+                        "role": "唐仁", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/701ddb6f4e04751b84b01be9fe418f34.jpg"
+                    }, 
+                    {
+                        "name": "张子枫", 
+                        "role": "", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/bf97810fa38188eb8fa0a7abc93b7cf7.jpg"
+                    }
+                ], 
+                "director": "陈思诚", 
+                "category": "喜剧|动作|悬疑", 
+                "synopsis": "在《唐探2》结局的部分，唐仁和野田昊都接到一个来自日本的电话，大呼案子太难，提前透露了第三部的故事地点——东京。", 
+                "filmType": {
+                    "name": "2D", 
+                    "value": 1
+                }, 
+                "nation": "中国大陆", 
+                "language": "汉语普通话 日语", 
+                "videoId": "", 
+                "premiereAt": 1613088000, 
+                "timeType": 3, 
+                "runtime": 130, 
+                "grade": "7.8", 
+                "item": {
+                    "name": "2D", 
+                    "type": 1
+                }, 
+                "isPresale": true, 
+                "isSale": false
+            }, 
+            {
+                "filmId": 4805, 
+                "name": "刺杀小说家", 
+                "poster": "https://pic.maizuo.com/usr/movie/346b0ca49a5fb38dd981fec3b3696be7.jpg", 
+                "actors": [
+                    {
+                        "name": "杨幂", 
+                        "role": "屠灵", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/a36e532510e8933e066fb64cffb90d5d.jpg"
+                    }, 
+                    {
+                        "name": "董子健", 
+                        "role": "路空文", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/a0ddd1c7b8b38a35835d1cf63a7bf266.jpg"
+                    }, 
+                    {
+                        "name": "于和伟", 
+                        "role": "李沐", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/d97b2367f992029a74c56bb0904908c6.jpg"
+                    }, 
+                    {
+                        "name": "路阳", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/3d31381be135c478b63ae8eccf683b43.jpg"
+                    }, 
+                    {
+                        "name": "雷佳音", 
+                        "role": "关宁", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/588839c8a41ba4c6f595a9619d64450d.jpg"
+                    }
+                ], 
+                "director": "路阳", 
+                "category": "奇幻|动作|冒险", 
+                "synopsis": "异世界皇都，天神赤发鬼残暴统治，滥杀无辜。少年空文因被赤发鬼追杀，决定奋起反击。在黑甲的指引下，踏上了凡人弑神之路。这是小说家路空文笔下的奇幻世界。没想到小说的进程，竟然影响着现实世界。这时一名男子接下了刺杀他的任务…", 
+                "filmType": {
+                    "name": "4D", 
+                    "value": 13
+                }, 
+                "nation": "中国大陆", 
+                "language": "", 
+                "videoId": "", 
+                "premiereAt": 1613088000, 
+                "timeType": 3, 
+                "runtime": 130, 
+                "grade": "7.8", 
+                "item": {
+                    "name": "4D", 
+                    "type": 13
+                }, 
+                "isPresale": true, 
+                "isSale": false
+            }, 
+            {
+                "filmId": 5336, 
+                "name": "新神榜：哪吒重生", 
+                "poster": "https://pic.maizuo.com/usr/movie/381e18bf03abc693ea8a6b2f18c8e2b3.jpg", 
+                "actors": [
+                    {
+                        "name": "赵霁", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/d07c5d172044fff5a1e5eed4282fc13b.jpg"
+                    }, 
+                    {
+                        "name": "杨天翔", 
+                        "role": "李云祥", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/aaa2f3867eb394501d0a12d6ba9d0e4c.jpg"
+                    }, 
+                    {
+                        "name": "李诗萌", 
+                        "role": "苏医生", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/c1f552a50053b6cdacea73b913077722.jpg"
+                    }, 
+                    {
+                        "name": "张赫", 
+                        "role": "面具人", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/8aa057a8cd79ffc7c34711d5672841b1.jpg"
+                    }, 
+                    {
+                        "name": "宣晓鸣", 
+                        "role": "龙王", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/322bf1ca24c84fbb50c6c58e715a6454.jpg"
+                    }
+                ], 
+                "director": "赵霁", 
+                "category": "动作|奇幻|动画", 
+                "synopsis": "三千年前，天下动荡，人神共遇大劫，不想哪吒的一缕魂魄逃脱天罗地网，世世转世投胎，这一世与东海市酷爱机车的热血青年李云祥人神共生。然而龙族对哪吒恩怨并未善罢甘休，有着哪吒元神的李云祥，亦无法逃脱被龙族赶尽杀绝的宿命。东海危在旦夕，李云祥是否能够与哪吒元神并肩作战，成为抵抗龙族的英雄？东海市的子民能否得到拯救？", 
+                "filmType": {
+                    "name": "3D", 
+                    "value": 2
+                }, 
+                "nation": "中国大陆", 
+                "language": "", 
+                "videoId": "", 
+                "premiereAt": 1613088000, 
+                "timeType": 3, 
+                "runtime": 116, 
+                "grade": "7.4", 
+                "item": {
+                    "name": "3D", 
+                    "type": 2
+                }, 
+                "isPresale": true, 
+                "isSale": false
+            }, 
+            {
+                "filmId": 5352, 
+                "name": "猫和老鼠", 
+                "poster": "https://pic.maizuo.com/usr/movie/1176682f3397c8cbf4ace6c693d5f8f8.jpg", 
+                "actors": [
+                    {
+                        "name": "蒂姆·斯托瑞", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/62850625cf2c1933bcdc911feffc8490.jpg"
+                    }, 
+                    {
+                        "name": "科洛·格蕾斯·莫瑞兹", 
+                        "role": "Kayla", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/23839e3ef3a822ef0bbacbb70a429351.jpg"
+                    }, 
+                    {
+                        "name": "迈克尔·佩纳", 
+                        "role": "Terrance", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/c96adbeb5b5e902da8b9625d4fb4e942.jpg"
+                    }, 
+                    {
+                        "name": "郑肯", 
+                        "role": "Jackie", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/dfa80fae015555495146a01692a3cc93.jpg"
+                    }, 
+                    {
+                        "name": "科林·乔斯特", 
+                        "role": "演员", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/c9fcf306685a4c7a5958067e12e81101.jpg"
+                    }
+                ], 
+                "director": "蒂姆·斯托瑞", 
+                "category": "喜剧|动画|冒险", 
+                "synopsis": "杰瑞于“世纪婚礼”前夕搬进了纽约市最豪华的御门酒店，迫使婚礼策划人凯拉雇佣了汤姆来赶走他。然而，随之而来的猫鼠大战有可能葬送凯拉的事业，破坏世纪婚礼，甚至毁掉整个酒店。但很快，更大的问题出现了：野心勃勃的活动经理特伦斯正在密谋同时对付他们三个人。", 
+                "filmType": {
+                    "name": "2D", 
+                    "value": 1
+                }, 
+                "nation": "美国", 
+                "language": "", 
+                "videoId": "", 
+                "premiereAt": 1614297600, 
+                "timeType": 3, 
+                "runtime": 101, 
+                "grade": "7.5", 
+                "item": {
+                    "name": "2D", 
+                    "type": 1
+                }, 
+                "isPresale": true, 
+                "isSale": false
+            }, 
+            {
+                "filmId": 5338, 
+                "name": "侍神令", 
+                "poster": "https://pic.maizuo.com/usr/movie/19f72ca63a37664fff8452075e434c8c.jpg", 
+                "actors": [
+                    {
+                        "name": "李蔚然", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/02cc09a264c4f7348e60bc8ec4b6b146.jpg"
+                    }, 
+                    {
+                        "name": "陈坤", 
+                        "role": "晴明", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/bd24ba187fdd2ff76c40a2b0aad43f53.jpg"
+                    }, 
+                    {
+                        "name": "周迅", 
+                        "role": "百旎", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/6fb381b4c06fb69405f37e5ec56e3962.jpg"
+                    }, 
+                    {
+                        "name": "陈伟霆", 
+                        "role": "慈沐", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/db33af62f1fb8af81f71277858d3d99e.jpg"
+                    }, 
+                    {
+                        "name": "屈楚萧", 
+                        "role": "袁柏雅", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/5335edbc06383752b6af8aa50a1e28dc.jpg"
+                    }
+                ], 
+                "director": "李蔚然", 
+                "category": "奇幻", 
+                "synopsis": "《侍神令》是由游戏《阴阳师》改编，讲述穿行于人妖两界的阴阳师晴明，因与一众妖怪缔结契约，酿成大祸，深陷危机。而与此同时，妖皇势力正卷土重来，一场恶战一触即发。在风云突变、局势动荡的危急时刻，晴明恍然发现，自己人妖混血的身份，竟是这一切灾祸的关键......", 
+                "filmType": {
+                    "name": "2D", 
+                    "value": 1
+                }, 
+                "nation": "中国大陆", 
+                "language": "", 
+                "videoId": "", 
+                "premiereAt": 1613088000, 
+                "timeType": 3, 
+                "runtime": 120, 
+                "grade": "7.8", 
+                "item": {
+                    "name": "2D", 
+                    "type": 1
+                }, 
+                "isPresale": true, 
+                "isSale": false
+            }, 
+            {
+                "filmId": 4972, 
+                "name": "熊出没·狂野大陆", 
+                "poster": "https://pic.maizuo.com/usr/movie/4d9b7a434de869be72156c9535fd6fa3.jpg", 
+                "actors": [
+                    {
+                        "name": "丁亮", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/940b30cea26c667dc0bccc3c2a5f679a.jpg"
+                    }, 
+                    {
+                        "name": "邵和麒", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/e80e51b64c7666b7eaa8a5125d72fba2.jpg"
+                    }, 
+                    {
+                        "name": "张秉君", 
+                        "role": "熊二", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/bf9ba695dca4ee2798ee808bb7d21fd7.jpg"
+                    }, 
+                    {
+                        "name": "谭笑", 
+                        "role": "光头强", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/cd0a40816f7a67c8b70ac80c8084b57d.jpg"
+                    }, 
+                    {
+                        "name": "张伟", 
+                        "role": "熊大", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/81246776d922295fd35433ef7ac435ba.jpg"
+                    }
+                ], 
+                "director": "丁亮|邵和麒", 
+                "category": "喜剧|科幻|动画", 
+                "synopsis": "狗熊岭附近新开业了一个神奇的“狂野大陆”，在那里，通过基因技术人可以自由变身 各种动物，享受无比的自由和快乐。导游事业受挫的光头强，阴差阳错与神秘人乐天和熊二 组队，参加乐园里奖金丰厚的比赛，却遭遇了队友乐天的背叛，历尽艰险终于获得冠军之际， 却意外发现狂野大陆中出现了肆意袭击他人的混合变身怪兽，同时也明白了队友乐天窃取基 因手环的背后的真相。为了守护基因变身技术所承载的美好初衷，光头强与乐天冒险闯入总部，却再次发现在 老板汤姆背后隐藏着真正的幕后黑手，他们是否能够获取最终的胜利?神秘人乐天背后又有 着怎样的故事...", 
+                "filmType": {
+                    "name": "3D", 
+                    "value": 2
+                }, 
+                "nation": "中国大陆", 
+                "language": "", 
+                "videoId": "", 
+                "premiereAt": 1613088000, 
+                "timeType": 3, 
+                "runtime": 99, 
+                "grade": "7.7", 
+                "item": {
+                    "name": "3D", 
+                    "type": 2
+                }, 
+                "isPresale": true, 
+                "isSale": false
+            }, 
+            {
+                "filmId": 5343, 
+                "name": "千顷澄碧的时代", 
+                "poster": "https://pic.maizuo.com/usr/movie/5454f76efdb12e3980d6adbacf3518f0.jpg", 
+                "actors": [
+                    {
+                        "name": "宁敬武", 
+                        "role": "导演", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/e0c98f89386880b43521f88b1cb1b9c4.jpg"
+                    }, 
+                    {
+                        "name": "李东学", 
+                        "role": "芦靖生", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/9e7ad9f7ac852a476bc01002d5f2bcb4.jpg"
+                    }, 
+                    {
+                        "name": "宋佳伦", 
+                        "role": "演员", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/039c2f891c63a0d69be65472430d8f1d.jpg"
+                    }, 
+                    {
+                        "name": "苏丽", 
+                        "role": "演员", 
+                        "avatarAddress": "https://pic.maizuo.com/usr/movie/6733f06fdc697120e5d073526cdf5814.jpg"
+                    }
+                ], 
+                "director": "宁敬武", 
+                "category": "剧情", 
+                "synopsis": "影片讲述了年轻的证监会挂职干部芦靖生（李东学 饰）与兰考县委副书记范中州（宋佳伦 饰）、兰考四方乡书记韩素云（苏丽 饰）为代表的兰考干部相遇在中国脱贫攻坚战第一线，带领人民群众奋战三年，最终改变了这座半个世纪没能摆脱贫困的县城，绘就新时代中国农村蓬勃发展的小康长卷！", 
+                "filmType": {
+                    "name": "2D", 
+                    "value": 1
+                }, 
+                "nation": "中国大陆", 
+                "language": "", 
+                "videoId": "", 
+                "premiereAt": 1614297600, 
+                "timeType": 3, 
+                "runtime": 116, 
+                "grade": "7.3", 
+                "item": {
+                    "name": "2D", 
+                    "type": 1
+                }, 
+                "isPresale": true, 
+                "isSale": false
+            }
+        ], 
+        "total": 31
+    }, 
+    "msg": "ok"
+}

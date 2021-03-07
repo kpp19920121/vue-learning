@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<body>
+
+    <div id="app">
+
+        <hr>
+
+        <button @click="handleClick(index)">
+            <label  v-show="isShow"  >显示</label>
+            <label  v-show="!isShow">隐藏</label>
+        </button>
+
+
+        <hr>
+
+
+        事件修饰符
+
+
+        <ul  @click='handleUlClick($event)'>
+            <li @click="handleLiClick($event)">我是li,使用原生的阻止冒泡</li>
+        </ul>
+
+
+        <ul  @click='handleUlClick1()'>
+            <li @click.stop="handleLiClick1()">我是li,使用事件修饰符的阻止冒泡</li>
+        </ul>
+    
+
+        <ul  @click.self='handleUlClick2()'>
+            <li @click="handleLiClick2()">我是li,将事件绑定到自身阻止冒泡</li>
+        </ul>
+     
+<hr>
+        按键修饰符
+        <input @keyup.enter="handleKeyUp($event)">
+        
+    </div>
+    
+</body>
+
+<script>
+
+
+
+
+    var vm=new Vue({
+        el:"#app",
+        data:{
+            index:1,
+            isShow:true
+        },
+        methods:{
+            handleClick(indexParam){
+                console.log(indexParam);
+                this.isShow=!this.isShow;
+            },
+            handleUlClick(){
+                console.log("ul click事件被触发了!");
+            },
+            handleLiClick(ev){
+                ev.stopPropagation();
+                console.log("li click事件被触发了!");
+            },
+            handleUlClick1(){
+                console.log("ul click事件被触发了!");
+            },
+            handleLiClick1(ev){
+                console.log("li click事件被触发了!");
+            },
+
+            handleUlClick2(){
+                console.log("ul click事件被触发了!");
+            },
+            handleLiClick2(ev){
+                console.log("li click事件被触发了!");
+            },
+            handleKeyUp(ev){
+                if(ev.keyCode==13){
+                    console.log("嗯下了回车键");
+                }
+
+                console.log(ev.keyCode);
+             
+            }
+
+        }
+    });
+
+
+</script>
+
+
+</html>
