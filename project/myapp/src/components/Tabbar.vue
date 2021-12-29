@@ -2,9 +2,11 @@
 
 <div >
 
+
+
 <ul>
-	<router-link  class="tabbarClass"  to="/Film" tag="div" activeClass="myActiveClass">电影</router-link>
-	<router-link  class="tabbarClass" to="/Cinema" tag="div" activeClass="myActiveClass">我的电影院</router-link>
+  <router-link  class="tabbarClass" to="/Cinema" tag="div" activeClass="myActiveClass">我的电影院</router-link>
+  <router-link  class="tabbarClass"  to="/Film" tag="div" activeClass="myActiveClass">电影</router-link>
 	<router-link  class="tabbarClass" to="/Center" tag="div" activeClass="myActiveClass">个人中心</router-link>
 </ul>
 

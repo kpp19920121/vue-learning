@@ -1,6 +1,6 @@
 <template>
 	<div class="box">
-	<div>hello vue!</div>
+	<div>hello vue!!!</div>
 	<input type="text" name="myText"   ref="myText"/>
 	<button @click="handlerClick">添加</button>
 	
