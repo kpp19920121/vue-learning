@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+
+
+        <div id="app">
+
+            <navbar>           
+            </navbar>
+            <sidebar></sidebar>
+
+        </div>
+
+
+    
+</body>
+
+
+<script>
+
+
+
+
+/**定义全局组件*/
+
+    Vue.component('navbar',{
+        template:`
+        <div style='background:red'>
+            <button @click='handleHomeClick'>主页</button>    
+            导航栏
+            <navbarchild></navbarchild>
+            <button @click='handleBackClick'>返回</button>
+        </div>
+        `,
+        components:{
+            navbarchild:{
+                template:`
+                <div>navbarchild</div>
+
+                `
+            }
+        },
+        methods:{
+            handleHomeClick(){
+                console.log("主页按钮被点击了");
+            },
+            handleBackClick(){
+                console.log("返回按钮被电击了1");
+            }
+        }
+
+    });
+
+    Vue.component('sidebar',{
+        template:`
+        <div style='background:red'>
+            <button @click='handleHomeClick'>主页</button>    
+            sidebar-导航栏
+            <button @click='handleBackClick'>返回</button>
+        </div>
+        `,
+        components:{
+            navbarchild:{
+                template:`
+                <div>navbarchild</div>
+
+                `
+            }
+        },
+        methods:{
+            handleHomeClick(){
+                console.log("主页按钮被点击了");
+            },
+            handleBackClick(){
+                console.log("返回按钮被电击了1");
+            }
+        }
+    });
+
+
+    var vm=new Vue({
+        el:"#app"
+
+    });
+
+</script>
+
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <parentcomponent></parentcomponent>
+</div>
+</body>
+
+<script>
+
+    var eventbus=new Vue();
+
+    Vue.component("parentcomponent",{
+        template:`
+            <div style="border-style: solid;border-color: red;width: 600px;height: 300px;text-align: center;margin: 0 auto">
+            父组件A<br/>
+            <button @click="handlerparentclick">父组件发送消息</button><br/>
+            <div >{{receivemessage}}</div><br/>
+            from child:
+            <childcomponent></childcomponent>
+            </div>
+            `,
+        data(){
+            return {
+                parentdatalist:[],
+                receivemessage:""
+            }
+        },
+        methods:{
+            handlerparentclick(){
+                this.parentdatalist=["A","B","C","D"];
+                eventbus.$emit("event-a",this.parentdatalist);
+            },
+            receivemessageEvent(e){
+                this.receivemessage=e;
+            }
+        }
+    });
+
+    Vue.component("childcomponent",{
+        template:`
+            <div style="border-style: solid;border-color: blue;width: 200px;height: 100px;text-align: center;margin-left: 20px;margin-top: 20px">
+                子组件B<br/>
+                <button @click="handlerchildclick">子组件接受消息</button><br/>
+                from server:
+                <ul >
+                  <li v-for="tempItem in childdatalist">{{tempItem}}</li>
+                </ul>
+            </div>
+            `,
+        methods: {
+            handlerchildclick(){
+                this.childdatalist=this.fromserver;
+            },
+            sendmessagetoserver(){
+                this.$emit("fromclientevent","hello server from client");
+            }
+        },
+        data(){
+            return {
+                childdatalist:[]
+            }
+        },
+        mounted(){
+            eventbus.$on("event-a",data=>{
+                this.childdatalist=data;
+            });
+        }
+    });
+
+    var vm=new Vue({
+        el:"#app"
+    });
+
+</script>
+
+</html>
