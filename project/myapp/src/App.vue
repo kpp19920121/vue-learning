@@ -1,83 +1,110 @@
 <template>
-	<div class="box">
-	<div>hello vue!!!</div>
-	<input type="text" name="myText"   ref="myText"/>
-	<button @click="handlerClick">添加</button>
-	
-	<ul>
-		<li v-for="data in dataList" v-bind:key="data">
-			{{data}}
-		</li>
-	
-	</ul>
-	<navibar>
-		<button @click="isShow=!isShow">naviber-click</button>
-	</navibar>	
-	<sidebar v-show="isShow">
-	
-	</sidebar>
-	
-	
-	
-	我是路由容器
-	<router-view></router-view>
+  <div>
+
+    <div style="display: flex;justify-content: center">
+
+      <div>
+        用户名:
+      </div>
+      <el-input v-model="username" label="用户名" class="inputClass" placeholder="jeecg"></el-input>
+    </div>
+
+    <div style="display: flex;justify-content: center">
+      <div>
+        密码:
+      </div>
+      <el-input v-model="password" class="inputClass" placeholder="123456"></el-input>
+    </div>
+    <div style="display: flex;justify-content: center">
+      <div>
+        验证码:
+      </div>
+      <el-input v-model="captcha" class="inputClass" placeholder="请输入内容"></el-input>
+      &nbsp;&nbsp;&nbsp;
+      <el-image :src="captchaImage"></el-image>
+      <el-button type="primary" style="margin-left: 30px" @click="handlerCaptcha">切换验证码</el-button>
+    </div>
+
+    <div style="display: flex;justify-content: center">
+      <el-button type="primary" @click="handlerLogin" style="width: 300px">提交</el-button>
+    </div>
+
+    <router-view></router-view>
 
 
+  </div>
 
-
-<hr/>
-
-<tabbar></tabbar>
-
-
-
-
-	</div>
-	
 </template>
-
-
-<!-- <style scoped="scoped">
-	.box li{
-		background-color: red;
-	}
-</style> -->
-
-
 <script>
+import axios from 'axios'
+import Vue from 'vue';
 
-import sidebar from "./components/Sidebar.vue"
-import navibar from "./components/Navibar"
-import Vue from "vue"
-import axios from "axios"
-import tabbar from "@/components/Tabbar"
+export default {
+  data() {
+    return {
+      input: '',
+      username: '',
+      password: '',
+      captcha: '',
+      captchaImage: '',
+      currdatetime: ''
+    }
+  },
+  methods: {
+    handlerLogin: function () {
 
-Vue.component("sidebar",sidebar);
-//Vue.component("navibar",navibar);
+      let url = "https://api.boot.jeecg.com/sys/login";
+      console.log("输入的验证码为:" + this.captcha);
+      axios.post(url, {
+        username: this.username,
+        password: this.password,
+        captcha: this.captcha,
+        checkKey: this.currdatetime
+      }).then((result) => {
+
+        console.log("返回内容", result.data.success);
+
+        if (result.data.success) {
+          this.$alert("登录成功，跳转到登录成功页面!");
+          //this.$router.push("/home");
+          console.log("登录成功获取的token为:\n" + result.data.result.token);
+
+          Vue.ls.set("Access-Token", result.data.result.token)
 
 
-export default{
-	data(){
-		return {
-			dataList:[],
-			isShow:true
-		}
-	},
-	methods:{
-		handlerClick(){
-			this.dataList.push(this.$refs.myText.value);
-		}
-	},
-	components:{
-		navibar:navibar,
-		tabbar:tabbar
-	},
-	mounted(){
-		axios.get("/ajax/movieOnInfoList?token=&optimus_uuid=DD85C1F0DFA511EA84CCC1360D39E0A43104C6445816465889497520EABBB9A2&optimus_risk_level=71&optimus_code=10").then(res=>{
-			console.log(res.data);
-		});
-	}
+        } else {
+          this.$alert("登录失败，错误信息为：" + result.data.message + "");
+        }
+
+      }).catch(err => {
+        console.log(err);
+      });
+    },
+    handlerCaptcha: function () {
+      this.changeCaptcha();
+    },
+    changeCaptcha: function () {
+      this.currdatetime = new Date().getTime();
+      axios.get(`http://api.boot.jeecg.com/sys/randomImage/${this.currdatetime}`).then((result) => {
+        console.log("加载的验证码信息为:\n", result.data.result);
+        this.captchaImage = result.data.result;
+      }).catch(error => {
+        console.log(error);
+      })
+    }
+  },
+  created() {
+    this.changeCaptcha();
+  }
 }
+
 </script>
+<style>
+.inputClass {
+  width: 300px;
+  height: 50px;
+  text-align: center;
+}
 
 
+</style>
